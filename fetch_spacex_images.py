@@ -1,7 +1,7 @@
 import requests
 import argparse
 
-from save_iamge import save_image
+from save_image import save_image
 
 
 def main():

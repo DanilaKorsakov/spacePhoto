@@ -2,7 +2,7 @@ import random
 import os
 
 import requests
-from save_iamge import save_image
+from save_image import save_image
 from dotenv import load_dotenv
 
 
