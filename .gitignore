@@ -1,4 +1,4 @@
-/.chache/
+/.cache/
 /.config/
 /.upm/
 /venv/
@@ -10,3 +10,4 @@
 *.nix
 replit_zip_error_log.txt
 *.env
+*.gitattributes
