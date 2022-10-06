@@ -33,11 +33,11 @@ def main():
 
     filename = 'NASA_'
 
-    for index, api_response in enumerate(response.json()):
+    for index, api_response in enumerate(response.json(), start=1):
         link = api_response['url']
         extension = get_extension(link)
         if extension:
-            full_name = f'{filename}{index+1}{extension}'
+            full_name = f'{filename}{index}{extension}'
             save_image(link, full_name)
 
 

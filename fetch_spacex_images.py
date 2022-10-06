@@ -19,8 +19,8 @@ def main():
     
     filename = 'spaceX_'
     
-    for index, picture in enumerate(pictures):
-        full_name = f'{filename}{index+1}.jpg'
+    for index, picture in enumerate(pictures, start=1):
+        full_name = f'{filename}{index}.jpg'
         save_image(picture, full_name)
 
 

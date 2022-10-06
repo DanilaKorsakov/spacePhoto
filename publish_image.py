@@ -22,13 +22,13 @@ def main():
     if args.image == None:
         all_files = os.walk("images")
         for array_of_files in all_files:
-            folder, nested_folder, files = array_of_files
-            image = random.choice(files)
+            folder, nested_folder, files_names = array_of_files
+            file_name = random.choice(files_names)
     else:
-        image = args.image
+        file_name = args.image
     
-    path = os.path.join('images', image)
-    with open(path, 'rb') as file:
+    file_path = os.path.join('images', file_name)
+    with open(file_path, 'rb') as file:
         bot.send_document(chat_id=chat_id, document=file)
 
 
